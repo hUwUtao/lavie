@@ -1,0 +1,18 @@
+[package]
+name = "lavie"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.94"
+font-kit = "0.14.2"
+image = "0.25.5"
+jpeg-encoder = { version = "0.6.0", features = ["simd"] }
+raqote = "0.8.5"
+rayon = "1.10.0"
+reqwest = { version = "0.12.9", features = ["json"] }
+serde = { version = "1.0.216", features = ["derive"] }
+tokio = { version = "1.42.0", features = ["full"] }
+
+[profile.release]
+debug = true
